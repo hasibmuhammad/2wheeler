@@ -1,9 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2Wheeler | Hasib Muhammad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              biker: "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header class="max-w-6xl mx-auto mt-10">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="bg-biker px-12 py-4 rounded-md text-white font-bold text-xl"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+
+      <section class="bg-[#fdf1ee] mt-20 rounded-md py-32">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full justify-center items-center flex-col-reverse gap-10 lg:gap-0 lg:flex-row"
+          >
+            <div>
+              <h1 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h1>
+              <p class="mt-5 mb-6">
+                Amet minim mollit non deserunt ullamco <br />
+                est sit aliqua dolor do amet sint. Velit officia consequat
+                <br />
+                duis enim velit mollit.
+              </p>
+              <button
+                class="bg-[#E76F51] px-12 py-4 rounded-md text-white font-bold text-xl"
+              >
+                Purchase
+              </button>
+            </div>
+            <div>
+              <img src="/images/slider/bike2.png" class="" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="text-[#E76F51]">❮</a>
+                <a href="#slide2" class="text-[#E76F51]">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full justify-center items-center"
+          >
+            <div>
+              <h1 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h1>
+              <p class="mt-5 mb-6">
+                Amet minim mollit non deserunt ullamco <br />
+                est sit aliqua dolor do amet sint. Velit officia consequat
+                <br />
+                duis enim velit mollit.
+              </p>
+              <button
+                class="bg-[#E76F51] px-12 py-4 rounded-md text-white font-bold text-xl"
+              >
+                Purchase
+              </button>
+            </div>
+            <div>
+              <img src="/images/slider/bike1.png" class="" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="text-[#E76F51]">❮</a>
+                <a href="#slide3" class="text-[#E76F51]">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full justify-center items-center"
+          >
+            <div>
+              <h1 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h1>
+              <p class="mt-5 mb-6">
+                Amet minim mollit non deserunt ullamco <br />
+                est sit aliqua dolor do amet sint. Velit officia consequat
+                <br />
+                duis enim velit mollit.
+              </p>
+              <button
+                class="bg-[#E76F51] px-12 py-4 rounded-md text-white font-bold text-xl"
+              >
+                Purchase
+              </button>
+            </div>
+            <div>
+              <img src="/images/slider/bike3.png" class="" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="text-[#E76F51]">❮</a>
+                <a href="#slide4" class="text-[#E76F51]">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full justify-center items-center"
+          >
+            <div>
+              <h1 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h1>
+              <p class="mt-5 mb-6">
+                Amet minim mollit non deserunt ullamco <br />
+                est sit aliqua dolor do amet sint. Velit officia consequat
+                <br />
+                duis enim velit mollit.
+              </p>
+              <button
+                class="bg-[#E76F51] px-12 py-4 rounded-md text-white font-bold text-xl"
+              >
+                Purchase
+              </button>
+            </div>
+            <div>
+              <img src="/images/slider/bike4.png" class="" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="text-[#E76F51]">❮</a>
+                <a href="#slide1" class="text-[#E76F51]">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="max-w-6xl mx-auto font-semibold mt-32">
+      <h1 class="text-5xl text-center">Fetured Bikes In This Year</h1>
+      <p class="text-biker text-center text-sm font-semibold">
+        Best bike collection
+      </p>
+      <div class="border-2 border-orange-500 w-16 mx-auto"></div>
+
+      <div
+        class="mt-12 grid grid-cols-1 place-items-center gap-2 lg:grid-cols-3 md:grid-cols-2"
+      >
+        <img src="images/others/feature-bike.png" alt="" />
+        <img src="images/others/feature-bike.png" alt="" />
+        <img src="images/others/feature-bike.png" alt="" />
+      </div>
+    </main>
+  </body>
 </html>
